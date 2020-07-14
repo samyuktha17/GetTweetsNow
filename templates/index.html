@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href= "{{url_for('static', filename = 'style.css')}}">
+  <title> Welcome </title>
+  <h1 class = 'hbox'> Get Ready to Start Scraping! </h1>
+</head>
+<body class = big, >
+  <p class = 'step'> Step 1: Create a Twitter Developer Account <a href="https://developer.twitter.com/en/apply-for-access">Create a Twitter Developer Account</a> </p>
+  <p class = 'step'> Step 2: Create an application <a href = 'https://developer.twitter.com/en/apps'> Create a Twitter Application </a> </p>
+  <p class = 'content'> Note: If you do not have a Website URL, you can fill in anything eg. temp.com  </p>
+  <p class = 'step'> Step 3: Make note of the following details:</p>
+    <li class = 'ls'> CONSUMER API KEY </li>
+    <li class = 'ls'> CONSUMER API SECRET KEY </li>
+    <li class = 'ls'> APP LABEL NAME : Dev Environment Label in <a href = 'https://developer.twitter.com/en/account/environments for the specific app'> Dev Environments</a></li> <br>
+  
+  
+<form class = 'hbox1' name = 'passdata' action = '.' method = 'post'>
+  <label class = 'lbs 'for="aname">App name or Dev Environment Label:</label>
+  <input type="text" id="aname" name="aname"><br>
+  <label class = 'lbs' for="cak">Consumer API Key:</label>
+  <input type="text" id="cak" name="cak"><br>
+  <label class = 'lbs' for="cask">Consumer API Secret Key:</label>
+  <input type="text" id="cask" name="cask"><br>
+  <label class = 'lbs' for='etype'>Extraction Type:</label><br>
+      <input type="radio" id="stream" name="etype" value="stream">
+      <label class = 'lbs1' for="stream">Extract Stream</label><br>
+      <input type="radio" id="efa" name="etype" value="efa">
+      <label class = 'lbs1' for="efa">Extract Full Archive</label><br>
+      <input type="radio" id="tdays" name="etype" value="tdays">
+      <label class = 'lbs1' for="tdays">Extract Last 30 days</label>
+  <br>
+  <label class = 'lbs' for='hashtag'>Hashtag:</label>
+  <input type="text" id="hashtag" name="hashtag"><br>
+  <label class = 'lbs' for='keywords'>Keyword:</label>
+  <input type="text" id="keywords" name="keywords"><br>
+  <label class = 'lbs' for='fdate'>From Date:</label>
+  <input type="date" id="fdate" name="fdate"><br>
+  <label class = 'lbs' for='tdate'>To Date:</label>
+  <input type="date" id="tdate" name="tdate"><br>
+  <label class = 'lbs'for="ftime">From Time:</label>
+  <input type="time" id="ftime" name="ftime"><br>
+  <label class = 'lbs'for="ttime">To Time:</label>
+  <input type="time" id="ttime" name="ttime">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
