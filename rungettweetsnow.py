@@ -32,10 +32,10 @@ def retfile():
 
     print('done')
     # at this point I have my file 
-    #app.config['FILE'] = 'C:\\Users\\Samuktha\\Documents\\USC\\twitter\\proj\\data.json'
-    #return send_file(app.config['FILE'], as_attachment = True)
+    # app.config['FILE'] = 'C:\\Users\\Samuktha\\Documents\\USC\\twitter\\proj\\data.json'
+    # return send_file(app.config['FILE'], as_attachment = True)
     return send_file('C:\\Users\\Samuktha\\Documents\\USC\\twitter\\proj\\data.json', as_attachment = True)
-    #return render_template('ret.html')
+    # return render_template('ret.html')
 
 if __name__ == '__main__':
     app.run()
